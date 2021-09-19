@@ -1,0 +1,11 @@
+Learning GIT for the first time:
+GIT COMMAD BY ORDER:
+git config --global user.name "your user name"
+git config --global user.email "your email id here"
+git config --global --edit // to change the user name and email
+mkdir LetsLearnGit  // to create the directory
+cd LetsLearnGit/    // to come in directory
+git init
+ls  // to see what is in the dir
+ls -a  // to show all files (hidden also)
+git status  // gives all the changes
