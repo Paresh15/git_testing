@@ -80,6 +80,8 @@ git merge feature1         // To merge feature1 in master
 git checkout -b flaskIntegration     // To create a branch named flaskIntegration and go in it
 
 Then go to github and copy paste the command of git orgin (url)
+git remote add origin (link)
+git push -u origin master 
 git remote                   // will show you remote repos
 git remote -v                // will show you remote repos with url
 
