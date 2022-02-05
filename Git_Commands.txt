@@ -1,0 +1,93 @@
+VERSION CONTROL SYSTEM:
+GIT PHASES::
+CLONE : Download the code
+ADD   : From working to staging
+COMMIT: Staging to loacal repo
+PUSH  : Local repo to remote repo
+PULL  : From remote repo to local repo (fetch(down)+merge(save))
+MERGE : Saving the code
+FETCH : Download the code
+
+GIT COMMANDS::
+git init         --> initilize the empty repo(to store snap)
+git status       --> to see the items (Working dir)
+git add test.txt (Staging area)
+git commit -m "this is my  test file" (local repo)
+git add -A       (All changes are upload to staging)
+git log          (Show all changes)
+git reflog       (Changes in short)
+
+copy the git remote add origin (For linking)
+git remote -v (Show URL)
+git push (will fail)
+git push --set-upstream origin master
+git clone URL
+.  (. for clonning)
+
+//////////////////////////////////////////////////////////
+GIT COMMAD BY ORDER:
+git config --global user.name "your user name"
+git config --global user.email "your email id here"
+git config --global --edit                                       // to change the user name and email
+mkdir LetsLearnGit                                               // to create the directory
+cd LetsLearnGit/                                                 // to come in directory
+git init                                                         // To initilize the folder 
+ls 
+ls -lart  // Shows all hidden files                                                              // to see what is in the dir
+ls -a                                                            // to show all files (hidden also)
+git status                                                       // gives all the changes
+git add                                                          // To add to staging area
+git add .                                                        // To add all the files
+git commit -m "message"                                          // For commiting:
+touch about.html (creates new file)
+git log                                                          // To see the changes
+git checkout <commit hash code/branch name>                      // Go to the individual commit
+git checkout master                                              // Comes back to all the files created 
+git branch                                                       // Go to the branch 
+git branch dev                                                   // To create the branch in the master branch
+git merge anuj/multiply                                          // to merge with main branch
+touch .git ignore                                                // To hide sensitive files
+
+
+///////////////////////////////////////////////////////////
+BY HARRY
+git checkout contact.html           // Matches with last commit (Restores the files)
+git checkout -f                     // Matches all files with last commit
+git log -p -1 (last number of last commit you want to see) (Will show commit with changes)
+git diff                            // shows the changes made in files (compares with local repo to staging repo)
+git diff --staged                   // Will compare staging area with last comit
+git commit -a -m "message"          // Will skip the staging area (add command) and direclty commited (not recomemded)
+git rm waste.html (name of file)    // Will be deleted from staging area as well as workding dir
+git rm --cached waste.html
+git status -s                       // Short status
+
+touch .gitignore                    // creates a file named .gitignore
+// If you add any file name to .gitignore the it will not be staged (from any folder)
+// if you use /mylog.log  (then only from root dir it will be ignored)
+// *.log             // Then all the files with extenstion log will be igonred (All this is writtern in .gitignore file)
+// To ignore folders
+// if ignore is name of folder then
+// write ignore/  (in .gitignore file)
+
+// FOR BRANCHES
+git branch feature1        // To create a branch named feature1
+git checkout feature1      // To enter feature1 branch
+
+IF you want to merge feature1 in master
+git checkout master        // To go in master branch
+git merge feature1         // To merge feature1 in master
+
+git checkout -b flaskIntegration     // To create a branch named flaskIntegration and go in it
+
+Then go to github and copy paste the command of git orgin (url)
+git remote                   // will show you remote repos
+git remote -v                // will show you remote repos with url
+
+git push origin master       // push master to the orgin remote repo
+
+git push -u origin master    // After this (git push) command will push to origin
+                             // No need to mention branch name again
+
+
+
+
